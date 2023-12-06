@@ -25,3 +25,34 @@ run the ansible playbook >> ansible-playbook install_apache_options_playbook.yam
 
 Examine the two files that will be modified by the playbook >> cat /etc/apache2/ports.conf
 
+**CSR1000V**
+
+ansible
+
+ansible --version
+
+cat /etc/ansible/ansible.cfg | more
+
+cat ansible.cfg
+
+ping 192.168.211.129
+
+mkdir backups
+
+ansible-playbook backup_cisco_router_playbook.yaml 
+
+ansible-playbook backup_cisco_router_playbook.yaml -i hosts
+
+cat show_run_CSR1kv.txt
+
+cat hosts
+
+mkdir ios_configurations
+
+ansible-playbook -v cisco_router_ipv6_config_playbook.yaml
+
+cat ios_configurations/IPv6_output_CSR1kv.txt 
+
+
+
+
